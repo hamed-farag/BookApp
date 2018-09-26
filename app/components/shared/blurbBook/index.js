@@ -1,5 +1,3 @@
-// bulma media object
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -33,8 +31,13 @@ export default props => {
           </p>
         </div>
       </div>
-      <div class="media-right">
-        <button class="delete" />
+      <div className="media-right">
+        <Link
+          className="button is-rounded is-small is-info"
+          to={`/book/${id}/edit`}
+        >
+          Edit
+        </Link>
       </div>
     </article>
   );
