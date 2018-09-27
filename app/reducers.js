@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import { LOCATION_CHANGE } from 'react-router-redux';
 
 import global from './redux/reducer';
-import book from 'components/Books/redux/reducer';
+import book from 'components/Book/redux/reducer';
 
 // Initial routing state
 const routeInitialState = {

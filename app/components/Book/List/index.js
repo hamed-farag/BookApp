@@ -63,8 +63,8 @@ function mapStoreToProps(store) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    fetchBooks: (top, skip) => {
-      dispatch(fetchBooks(top, skip));
+    fetchBooks: (pageNumber, pageSize) => {
+      dispatch(fetchBooks(pageNumber, pageSize));
     },
   };
 }

@@ -1,7 +1,7 @@
 import React from 'react';
-import BooksList from 'components/Books/List';
-import BooksDetails from 'components/Books/List';
-import BooksForm from 'components/Books/List';
+import BooksList from 'components/Book/List';
+import BooksDetails from 'components/Book/List';
+import BooksForm from 'components/Book/List';
 
 export default props => {
   debugger;

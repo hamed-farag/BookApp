@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Books from 'containers/Books';
+import Book from 'containers/Book';
 import Author from 'containers/Author';
 import Category from 'containers/Category';
 import NotFoundPage from 'containers/NotFoundPage';
@@ -37,9 +37,9 @@ export default function Home() {
                     />
                   </div>
                   <div className="column">
-                    <Route exact path="/" component={Books} />
-                    <Route path={`/book/:mode(new)`} component={Books} />
-                    <Route path={`/book/:id/:mode(edit)?`} component={Books} />
+                    <Route exact path="/" component={Book} />
+                    <Route path={`/book/:mode(new)`} component={Book} />
+                    <Route path={`/book/:id/:mode(edit)?`} component={Book} />
                     <Route path={`/author/:mode(new)`} component={Author} />
                     <Route
                       path={`/author/:id/:mode(edit)?`}
@@ -85,25 +85,3 @@ export default function Home() {
     </div>
   );
 }
-
-/**
-    <div className="container">
-      <div className="navbar">navigation</div>
-      <div className="columns">
-        <div className="column is-one-third">
-          left side containes two sections
-        </div>
-        <div className="column">
-          <Switch>
-            <Route exact path="/" component={Books} />
-            <Route path={`/book/:mode(new)`} component={Books} />
-            <Route path={`/book/:id/:mode(edit)?`} component={Books} />
-            <Route path={`/author/:mode(new)`} component={Author} />
-            <Route path={`/author/:id/:mode(edit)?`} component={Author} />
-            <Route path={`/category/:mode(new)`} component={Category} />
-            <Route path={`/category/:id/:mode(edit)?`} component={Category} />
-          </Switch>
-        </div>
-      </div>
-    </div>
- */
