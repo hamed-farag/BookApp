@@ -1,9 +1,16 @@
 const booksBL = require('../businessLayer/books');
+const url = require('url');
 
 exports.api = function(router) {
   router.get('/books', function(req, res) {
-    const books = booksBL.getBooks();
-    res.json({ books: books });
+    var url_parts = url.parse(req.url, true);
+    var query = url_parts.query;
+
+    const result = booksBL.getBooks(
+      Number(query.pageNumber),
+      Number(query.pageSize),
+    );
+    res.json({ books: result.books, totalCount: result.totalCount });
   });
 
   router.get('/books/:id', function(req, res) {

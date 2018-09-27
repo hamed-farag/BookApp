@@ -1,14 +1,19 @@
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
 const _includes = require('lodash/includes');
+const _size = require('lodash/size');
 
 const adapter = new FileSync('server/database/books.json');
 const db = low(adapter);
 
 const authorDL = require('./author');
 
-function getBooks() {
-  return db.get('books');
+function getBooks(pageNumber, pageSize) {
+  var books = db.get('books');
+  return {
+    totalCount: 100,
+    books: books.slice(pageNumber * pageSize, (pageNumber + 1) * pageSize),
+  };
 }
 
 function getBookById(id) {
