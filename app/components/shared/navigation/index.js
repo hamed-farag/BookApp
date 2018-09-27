@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import styled from 'styled-components';
 
 export default class Navigation extends React.Component {
   state = {
@@ -51,26 +51,34 @@ export default class Navigation extends React.Component {
   };
 
   render() {
+    const NavigationWrapper = styled.div`
+      padding: 20px;
+      background-color: bisque;
+      margin-bottom: 20px;
+    `;
+
     return (
-      <nav className="level books-nav">
-        <div className="level-left">
-          <div className="level-item">
-            <h1 className="title">Books Store</h1>
-          </div>
-        </div>
-        <div className="level-right">
-          <div className="columns is-mobile">
-            <div className="column">
-              <input
-                className="input is-rounded"
-                type="text"
-                placeholder="Rounded input"
-              />
+      <NavigationWrapper>
+        <nav className="level">
+          <div className="level-left">
+            <div className="level-item">
+              <h1 className="title">Books Store</h1>
             </div>
-            <div className="column">{this.popupMenu()}</div>
           </div>
-        </div>
-      </nav>
+          <div className="level-right">
+            <div className="columns is-mobile">
+              <div className="column">
+                <input
+                  className="input is-rounded"
+                  type="text"
+                  placeholder="Rounded input"
+                />
+              </div>
+              <div className="column">{this.popupMenu()}</div>
+            </div>
+          </div>
+        </nav>
+      </NavigationWrapper>
     );
   }
 }
