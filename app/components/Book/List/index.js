@@ -17,7 +17,6 @@ class BookList extends React.Component {
 
   componentDidMount() {
     const { fetchBooks } = this.props;
-    //    pageNumber, pageSize
     fetchBooks(1, this.state.top);
   }
 
@@ -29,14 +28,14 @@ class BookList extends React.Component {
   };
 
   render() {
-    const { books, totalCount } = this.props;
+    const { books, totalCount, isAppInEditMode } = this.props;
     const { activePage, top } = this.state;
 
     return (
       <React.Fragment>
-        {books.map(book => {
-          return <BlurbBook book={book} key={book.id} />;
-        })}
+        {books.map(book => (
+          <BlurbBook book={book} isEditable={isAppInEditMode} key={book.id} />
+        ))}
         <Pagination
           activePage={activePage}
           itemsCountPerPage={top}
@@ -58,6 +57,7 @@ function mapStoreToProps(store) {
     books: store.book.items,
     hasError: store.book.hasError,
     totalCount: store.book.totalCount,
+    isAppInEditMode: store.global.isAppInEditMode,
   };
 }
 

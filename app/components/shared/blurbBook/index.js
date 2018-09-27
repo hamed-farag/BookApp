@@ -4,10 +4,18 @@ import styled from 'styled-components';
 
 export default props => {
   const { id, title, description, image } = props.book;
-
   const BookImage = styled.div`
     background: url(${image}) center center / cover no-repeat;
   `;
+
+  const editableField = props.isEditable ? (
+    <Link
+      className="button is-rounded is-small is-info"
+      to={`/book/${id}/edit`}
+    >
+      Edit
+    </Link>
+  ) : null;
 
   return (
     <article className="media">
@@ -31,14 +39,7 @@ export default props => {
           </p>
         </div>
       </div>
-      <div className="media-right">
-        <Link
-          className="button is-rounded is-small is-info"
-          to={`/book/${id}/edit`}
-        >
-          Edit
-        </Link>
-      </div>
+      <div className="media-right">{editableField}</div>
     </article>
   );
 };

@@ -1,5 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import { ChangeAppMode } from '../../redux/actions';
 
 import Book from 'containers/Book';
 import Author from 'containers/Author';
@@ -9,10 +12,15 @@ import NotFoundPage from 'containers/NotFoundPage';
 import Navigation from 'components/shared/navigation';
 import LinksList from 'components/shared/linksList';
 
-export default function Home() {
+function Home(props) {
   return (
     <div className="container is-fluid">
-      <Navigation />
+      <Navigation
+        mode={{
+          changeAppMode: props.ChangeAppMode,
+          isAppInEditMode: props.isAppInEditMode,
+        }}
+      />
       <div className="container">
         <Router>
           <Switch>
@@ -90,3 +98,22 @@ export default function Home() {
     </div>
   );
 }
+
+function mapStoreToProps(store) {
+  return {
+    isAppInEditMode: store.global.isAppInEditMode,
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    ChangeAppMode: () => {
+      dispatch(ChangeAppMode());
+    },
+  };
+}
+
+export default connect(
+  mapStoreToProps,
+  mapDispatchToProps,
+)(Home);

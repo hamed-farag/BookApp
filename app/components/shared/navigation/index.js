@@ -14,6 +14,10 @@ export default class Navigation extends React.Component {
 
   popupMenu = () => {
     const { isMenuOpen } = this.state;
+    const { changeAppMode, isAppInEditMode } = this.props.mode;
+
+    const editModeText = isAppInEditMode ? 'Exit Edit Mode' : 'Edit Mode';
+
     return (
       <div className={`dropdown is-right ${isMenuOpen ? 'is-active' : ''}`}>
         <div className="dropdown-trigger">
@@ -41,9 +45,9 @@ export default class Navigation extends React.Component {
               <p>Add New Author</p>
             </div>
             <hr className="dropdown-divider" />
-            <div className="dropdown-item">
-              <p>Edit Mode</p>
-            </div>
+            <a onClick={changeAppMode} className="dropdown-item">
+              {editModeText}
+            </a>
           </div>
         </div>
       </div>
@@ -51,9 +55,11 @@ export default class Navigation extends React.Component {
   };
 
   render() {
+    const { isAppInEditMode } = this.props.mode;
+
     const NavigationWrapper = styled.div`
       padding: 20px;
-      background-color: bisque;
+      background-color: ${isAppInEditMode ? '#670001' : '#333333'};
       margin-bottom: 20px;
     `;
 
