@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export default props => {
-  const { id, title, description, image } = props.book;
+  const { id, title, description, image, authorName } = props.book;
   const BookImage = styled.div`
     background: url(${image}) center center / cover no-repeat;
+    padding-top: 100%;
   `;
 
   const editableField = props.isEditable ? (
@@ -30,6 +31,8 @@ export default props => {
             <Link to={`/book/${id}`}>
               <strong>{title}</strong>
             </Link>
+            <br />
+            <small>By {authorName}</small>
             <br />
             {description && description.substring(0, 300)}...<Link
               to={`/book/${id}`}

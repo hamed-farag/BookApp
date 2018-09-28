@@ -4,10 +4,10 @@ import { withRouter } from 'react-router-dom';
 
 import { fetchBookByIdAPI } from '../apis';
 
-import { fetchBookById } from '../redux/actions';
 import requester from '../../../utilities/api/requester';
 
-import BlurbBook from 'components/shared/blurbBook';
+import BlurbBookDetails from 'components/shared/blurbBookDetails';
+import SuggestedBooks from './suggested';
 
 class BookDetails extends React.Component {
   constructor(props) {
@@ -51,7 +51,12 @@ class BookDetails extends React.Component {
 
     return (
       <React.Fragment>
-        <div>{JSON.stringify(book)}</div>
+        <BlurbBookDetails book={book} isEditable={isAppInEditMode} />
+        <br />
+        <p>{book && book.description}</p>
+        <hr />
+        <h1 className="title">Suggested Books</h1>
+        <SuggestedBooks />
       </React.Fragment>
     );
   }

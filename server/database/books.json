@@ -8,7 +8,7 @@
       "isbn": "1PZF17IST7CO81RIJV0YH4PSVGGOUSG2OO",
       "publishYear": 1999,
       "pagesNumber": 527,
-      "image": "https://lorempixel.com/220/300/nature?id=ceb1138c-a247-43b5-8470-edcff6783bab",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "bca15b9c-3ef2-47a7-8f4d-0ae177c77ee6"
     },
     {
@@ -19,7 +19,7 @@
       "isbn": "3A3RLG23HNSGQ2QGJ0GEU0A5V70DODPU",
       "publishYear": 2010,
       "pagesNumber": 756,
-      "image": "https://lorempixel.com/220/300/abstract?id=7529d06d-acb9-4a52-9b75-28491f4404ec",
+	  "image": "https://picsum.photos/200/300/?image=101", 
       "category": "fa3fd7b5-3637-4fbc-91a7-cc81ba5e5a8f"
     },
     {
@@ -30,7 +30,7 @@
       "isbn": "3QQY22RYSFX6C77P28XBWXVROYYJT",
       "publishYear": 2016,
       "pagesNumber": 694,
-      "image": "https://lorempixel.com/220/300/abstract?id=3b835834-3db7-4cb1-a8e5-c020ba1c9422",
+	  "image": "https://picsum.photos/200/300/?image=102", 
       "category": "f6507468-6cec-4563-923f-b51702e049a1"
     },
     {
@@ -41,7 +41,7 @@
       "isbn": "1KKVQTD3VGJALIN6W7UE0MNFOGD1T5KN",
       "publishYear": 1988,
       "pagesNumber": 439,
-      "image": "https://lorempixel.com/220/300/abstract?id=08779eb5-aba7-4e7c-a01e-5c4b533bdc68",
+	  "image": "https://picsum.photos/200/300/?image=103", 
       "category": "af38e08e-1e47-473b-aaa3-4e9b6bde6b72"
     },
     {
@@ -52,7 +52,7 @@
       "isbn": "37PPROV9SPWNP0E4U8KNB1B19XI5Q4ZN",
       "publishYear": 1968,
       "pagesNumber": 478,
-      "image": "https://lorempixel.com/220/300/abstract?id=802c602b-a6c4-40dc-a3fc-fbef65d00f36",
+	  "image": "https://picsum.photos/200/300/?image=104", 
       "category": "ddc81706-b0c9-4ec6-a3ce-78a2300d442d"
     },
     {
@@ -63,7 +63,7 @@
       "isbn": "1I9FSHLXGD26LKLRAVHCO997IJAC8EBB",
       "publishYear": 1965,
       "pagesNumber": 873,
-      "image": "https://lorempixel.com/220/300/nature?id=4fe5b586-362c-4822-a3db-5ef00353cda7",
+	  "image": "https://picsum.photos/200/300/?image=105", 
       "category": "d86b9b4f-165a-49e9-a7e6-86a2ad10ea00"
     },
     {
@@ -74,7 +74,7 @@
       "isbn": "374HT58ZY7CTXA2RDR9V80QH8HUVT9797",
       "publishYear": 1991,
       "pagesNumber": 771,
-      "image": "https://lorempixel.com/220/300/nature?id=be93821b-2b50-4597-a467-93125b355dc4",
+	  "image": "https://picsum.photos/200/300/?image=106", 
       "category": "9967c77a-1da5-4d69-b6a9-014ca20abd61"
     },
     {
@@ -85,7 +85,7 @@
       "isbn": "1MVGOI7602HX3BH4Y4N9540C73R",
       "publishYear": 1961,
       "pagesNumber": 775,
-      "image": "https://lorempixel.com/220/300/abstract?id=73ff176c-5ffc-4c00-aa72-901c5f6fb446",
+	  "image": "https://picsum.photos/200/300/?image=107", 
       "category": "d86b9b4f-165a-49e9-a7e6-86a2ad10ea00"
     },
     {
@@ -96,7 +96,7 @@
       "isbn": "33NAXKLW0X2FVX8G9TI4Z5AVHOU0",
       "publishYear": 1977,
       "pagesNumber": 875,
-      "image": "https://lorempixel.com/220/300/nature?id=09c8e3f3-4737-4744-9a23-50002bb37a41",
+	  "image": "https://picsum.photos/200/300/?image=108", 
       "category": "93a51118-8d8e-410e-8afb-ba3bd1c5e910"
     },
     {
@@ -107,7 +107,7 @@
       "isbn": "1CMY9CNNRJ5Z9XHDFHHA1KYQWC09WEI",
       "publishYear": 1957,
       "pagesNumber": 79,
-      "image": "https://lorempixel.com/220/300/nature?id=3cd16b4d-0849-4184-ade0-b4501f85839b",
+	  "image": "https://picsum.photos/200/300/?image=109", 
       "category": "0d0158a0-c51f-4b00-af70-9bf449de2aee"
     },
     {
@@ -118,7 +118,7 @@
       "isbn": "1R5J8YC3U95PZEQAFPK64C2HC2MIB8",
       "publishYear": 1964,
       "pagesNumber": 624,
-      "image": "https://lorempixel.com/220/300/nature?id=13404cc6-ad82-4435-a3ee-3f12ba81ca75",
+	  "image": "https://picsum.photos/200/300/?image=110", 
       "category": "04046987-b817-4278-8509-5ffcd41aa3a8"
     },
     {
@@ -129,7 +129,7 @@
       "isbn": "1JCJBNA0B1KWX09P0LMIVL87YF3DTSTR",
       "publishYear": 1967,
       "pagesNumber": 489,
-      "image": "https://lorempixel.com/220/300/abstract?id=1311f2f8-61b1-4f57-bd6e-f87b7a39ac6f",
+	  "image": "https://picsum.photos/200/300/?image=111", 
       "category": "bca15b9c-3ef2-47a7-8f4d-0ae177c77ee6"
     },
     {
@@ -140,7 +140,7 @@
       "isbn": "120HDTY7JQS7VCEL7MDPQCIIMDZ4WU9",
       "publishYear": 1970,
       "pagesNumber": 83,
-      "image": "https://lorempixel.com/220/300/abstract?id=a2de5c15-084f-4ae0-bda2-9eda0567fe9f",
+	  "image": "https://picsum.photos/200/300/?image=112", 
       "category": "9967c77a-1da5-4d69-b6a9-014ca20abd61"
     },
     {
@@ -151,7 +151,7 @@
       "isbn": "11R8EGAU92D19RRKWMHUY877400T61",
       "publishYear": 2014,
       "pagesNumber": 239,
-      "image": "https://lorempixel.com/220/300/nature?id=60c4374f-c4d6-4ec5-8f0c-ae3951ac909c",
+	  "image": "https://picsum.photos/200/300/?image=113", 
       "category": "bca15b9c-3ef2-47a7-8f4d-0ae177c77ee6"
     },
     {
@@ -162,7 +162,7 @@
       "isbn": "3SPNBNR14X520HGM1VYPMZS4HNF2T29GJ",
       "publishYear": 2002,
       "pagesNumber": 105,
-      "image": "https://lorempixel.com/220/300/abstract?id=0546ef55-4e3f-4862-992b-3d404deeb8dc",
+	  "image": "https://picsum.photos/200/300/?image=114", 
       "category": "ddc81706-b0c9-4ec6-a3ce-78a2300d442d"
     },
     {
@@ -173,7 +173,7 @@
       "isbn": "3ZH7EY3G2IHEIJQ1W30YJGKD624Z",
       "publishYear": 1986,
       "pagesNumber": 585,
-      "image": "https://lorempixel.com/220/300/nature?id=18c1443c-7717-4502-a05e-3fcb42bbcebf",
+	  "image": "https://picsum.photos/200/300/?image=115", 
       "category": "d86b9b4f-165a-49e9-a7e6-86a2ad10ea00"
     },
     {
@@ -184,7 +184,7 @@
       "isbn": "3FRKSHXNM5ZR36KRO8N70ABNALQ98SNW2",
       "publishYear": 1956,
       "pagesNumber": 981,
-      "image": "https://lorempixel.com/220/300/abstract?id=92ecd9d7-c0c8-481d-8c36-6de3e1fe8299",
+	  "image": "https://picsum.photos/200/300/?image=116", 
       "category": "16877178-dc27-4fec-babc-8111142cbd2f"
     },
     {
@@ -195,7 +195,7 @@
       "isbn": "1EGBFZ9B4TAPSRZQNC42Y19FDSVLM1M6WR",
       "publishYear": 1995,
       "pagesNumber": 159,
-      "image": "https://lorempixel.com/220/300/nature?id=84ae291d-ce36-49bb-a50b-238492a9cd3b",
+	  "image": "https://picsum.photos/200/300/?image=117", 
       "category": "8c08730b-c774-427b-9d96-4b31d9292c62"
     },
     {
@@ -206,7 +206,7 @@
       "isbn": "1Y189TUQZ16JM8V818D1FJDTTCS5VEZUR",
       "publishYear": 2003,
       "pagesNumber": 266,
-      "image": "https://lorempixel.com/220/300/nature?id=91be915d-3064-4924-837c-ab71499805d0",
+	  "image": "https://picsum.photos/200/300/?image=118", 
       "category": "bca15b9c-3ef2-47a7-8f4d-0ae177c77ee6"
     },
     {
@@ -217,7 +217,7 @@
       "isbn": "1XB79H8VEK12K2XXI6WUUH2XBSEI3BWBYO",
       "publishYear": 1984,
       "pagesNumber": 154,
-      "image": "https://lorempixel.com/220/300/abstract?id=1e9c96e3-b40b-4c1d-a1b2-26301a8c64f1",
+	  "image": "https://picsum.photos/200/300/?image=119", 
       "category": "ddc81706-b0c9-4ec6-a3ce-78a2300d442d"
     },
     {
@@ -228,7 +228,7 @@
       "isbn": "14FUH4B09X6A6OWQZ3JL5QJJVVQNN7V",
       "publishYear": 2016,
       "pagesNumber": 578,
-      "image": "https://lorempixel.com/220/300/nature?id=f6d27575-6908-44bc-8acc-c0ac0b8f3211",
+	  "image": "https://picsum.photos/200/300/?image=120", 
       "category": "ddc81706-b0c9-4ec6-a3ce-78a2300d442d"
     },
     {
@@ -239,7 +239,7 @@
       "isbn": "1ZE8ECXLXR49CM3UE8F8CVF7RY2F",
       "publishYear": 1957,
       "pagesNumber": 252,
-      "image": "https://lorempixel.com/220/300/abstract?id=fa97f3be-2e42-43e9-b13a-129d56fc7172",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "dc1d741a-d4e9-4e64-b33a-4eeb0970903c"
     },
     {
@@ -250,7 +250,7 @@
       "isbn": "3J4WS2OE1PHQE6YJIMJUNZ725CPS8ZUM34",
       "publishYear": 1984,
       "pagesNumber": 185,
-      "image": "https://lorempixel.com/220/300/nature?id=299c7324-4798-405b-a5c8-f803b8422d9d",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "93a51118-8d8e-410e-8afb-ba3bd1c5e910"
     },
     {
@@ -261,7 +261,7 @@
       "isbn": "18SG2D831FH1S0VD6G0Y2OMPHZBGDP1",
       "publishYear": 1998,
       "pagesNumber": 472,
-      "image": "https://lorempixel.com/220/300/nature?id=31e31915-d8ee-469c-a46c-d5c51533e05f",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "af38e08e-1e47-473b-aaa3-4e9b6bde6b72"
     },
     {
@@ -272,7 +272,7 @@
       "isbn": "3W9I891LCWHC8334FK7SBY7VDBVEPIFFM",
       "publishYear": 1959,
       "pagesNumber": 399,
-      "image": "https://lorempixel.com/220/300/abstract?id=2023730a-cb53-4744-80b8-539a0a9fa340",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "88b92bc4-a7a3-4749-9911-87c48b6bb74c"
     },
     {
@@ -283,7 +283,7 @@
       "isbn": "3H7NSXDS8JGU0S51U1203FQAHE6",
       "publishYear": 1995,
       "pagesNumber": 207,
-      "image": "https://lorempixel.com/220/300/nature?id=3d377d5d-4146-43c4-b719-a4ab4d9c4349",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "af38e08e-1e47-473b-aaa3-4e9b6bde6b72"
     },
     {
@@ -294,7 +294,7 @@
       "isbn": "19Q86GU7C2E8FC5HERI3JY9DPBVYJOQNC4",
       "publishYear": 2005,
       "pagesNumber": 801,
-      "image": "https://lorempixel.com/220/300/abstract?id=be4e55fb-8409-49d4-abc7-ac0abfac74b9",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "93a51118-8d8e-410e-8afb-ba3bd1c5e910"
     },
     {
@@ -305,7 +305,7 @@
       "isbn": "3G8W7RSXGVW9UEAYILOCWC9DWG4VW28",
       "publishYear": 2000,
       "pagesNumber": 978,
-      "image": "https://lorempixel.com/220/300/nature?id=25800655-6bbd-4794-9a49-d58c75a75c98",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "0d0158a0-c51f-4b00-af70-9bf449de2aee"
     },
     {
@@ -316,7 +316,7 @@
       "isbn": "34DQFC62N5GRQXIMO73UZ0ZU4ABP",
       "publishYear": 1985,
       "pagesNumber": 463,
-      "image": "https://lorempixel.com/220/300/abstract?id=7621f287-cf01-4ced-9747-cc9a89e9a67c",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "af38e08e-1e47-473b-aaa3-4e9b6bde6b72"
     },
     {
@@ -327,7 +327,7 @@
       "isbn": "1F0YG214KO72XNKZZZQSMNOSRV7I3KHB",
       "publishYear": 1994,
       "pagesNumber": 803,
-      "image": "https://lorempixel.com/220/300/nature?id=c5d4b02c-2f19-43f6-81f4-41f95ff91a31",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "af38e08e-1e47-473b-aaa3-4e9b6bde6b72"
     },
     {
@@ -338,7 +338,7 @@
       "isbn": "18C6XLWJWJHXQ36ME3XH3LMVFE44907EQG",
       "publishYear": 2012,
       "pagesNumber": 501,
-      "image": "https://lorempixel.com/220/300/abstract?id=664621c5-1b9e-4612-abcc-2348d2ad9008",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "8c08730b-c774-427b-9d96-4b31d9292c62"
     },
     {
@@ -349,7 +349,7 @@
       "isbn": "3M74P3F8APFS8X5YCCCPFRWEWI1H5AC63S",
       "publishYear": 2012,
       "pagesNumber": 946,
-      "image": "https://lorempixel.com/220/300/abstract?id=f84f3076-083c-4647-b817-f75971d25649",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "dc1d741a-d4e9-4e64-b33a-4eeb0970903c"
     },
     {
@@ -360,7 +360,7 @@
       "isbn": "35XN5SBR44D5QNZXLMQJX20K7UWJKOC",
       "publishYear": 1958,
       "pagesNumber": 445,
-      "image": "https://lorempixel.com/220/300/abstract?id=c52dda7e-7434-4cbb-8d71-f7b85a25836f",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "fa3fd7b5-3637-4fbc-91a7-cc81ba5e5a8f"
     },
     {
@@ -371,7 +371,7 @@
       "isbn": "31EONHRM0GI1AUQYJMXIECM5JTHB8",
       "publishYear": 1953,
       "pagesNumber": 139,
-      "image": "https://lorempixel.com/220/300/nature?id=3fd9b069-2d7e-470b-b419-5662fad1557f",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "f6507468-6cec-4563-923f-b51702e049a1"
     },
     {
@@ -382,7 +382,7 @@
       "isbn": "10ATHH2V862PBY9JUNZNX5J98QWOZ93W",
       "publishYear": 2000,
       "pagesNumber": 847,
-      "image": "https://lorempixel.com/220/300/abstract?id=271cd386-c9a0-4baf-b2ce-70f1373aeb92",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "d86b9b4f-165a-49e9-a7e6-86a2ad10ea00"
     },
     {
@@ -393,7 +393,7 @@
       "isbn": "194RE85VG5B2ZA8401EZ2EHG3KBRQAHK",
       "publishYear": 1967,
       "pagesNumber": 802,
-      "image": "https://lorempixel.com/220/300/nature?id=f7871ad2-57db-41ed-8df2-8dcd8a3747f2",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "ddc81706-b0c9-4ec6-a3ce-78a2300d442d"
     },
     {
@@ -404,7 +404,7 @@
       "isbn": "3Y8MX9ZAUS66ULRG4OHDMNYLUS91",
       "publishYear": 1958,
       "pagesNumber": 282,
-      "image": "https://lorempixel.com/220/300/abstract?id=e3f45b6f-e077-42db-b6f1-2ba6e28079d6",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "9967c77a-1da5-4d69-b6a9-014ca20abd61"
     },
     {
@@ -415,7 +415,7 @@
       "isbn": "1DYWFPWFY0P07TLQ3B3CEAQN920",
       "publishYear": 1955,
       "pagesNumber": 597,
-      "image": "https://lorempixel.com/220/300/abstract?id=c421fe8a-6c1a-4b7a-b350-58510798c67b",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "d86b9b4f-165a-49e9-a7e6-86a2ad10ea00"
     },
     {
@@ -426,7 +426,7 @@
       "isbn": "31L8ABH0VZWGTN7TQH97FYQL8NEWL05",
       "publishYear": 1973,
       "pagesNumber": 328,
-      "image": "https://lorempixel.com/220/300/nature?id=145c7f01-da4c-4e45-ac9b-03e34de66fc3",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "04046987-b817-4278-8509-5ffcd41aa3a8"
     },
     {
@@ -437,7 +437,7 @@
       "isbn": "1QQ4UKVMGG25YAHTHGYDBNKGZJG8I260",
       "publishYear": 1963,
       "pagesNumber": 166,
-      "image": "https://lorempixel.com/220/300/abstract?id=12544090-cb0d-42c3-8c88-b38ce1458cf5",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "04046987-b817-4278-8509-5ffcd41aa3a8"
     },
     {
@@ -448,7 +448,7 @@
       "isbn": "1IZQ9FYZHQB14K8NWMORVHNQV8RFXOR53",
       "publishYear": 1987,
       "pagesNumber": 765,
-      "image": "https://lorempixel.com/220/300/abstract?id=424a65a4-aa0c-45b0-aa17-d9431087ee84",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "f6507468-6cec-4563-923f-b51702e049a1"
     },
     {
@@ -459,7 +459,7 @@
       "isbn": "1FAW4LZD16JMP7YQ4IF84U9DP8EYC93",
       "publishYear": 1993,
       "pagesNumber": 664,
-      "image": "https://lorempixel.com/220/300/abstract?id=a4be1a01-dd70-47a9-9851-bafbaf77c6e7",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "bca15b9c-3ef2-47a7-8f4d-0ae177c77ee6"
     },
     {
@@ -470,7 +470,7 @@
       "isbn": "33QMTIZX9AUPF2CI03ATXM1ECCBRI",
       "publishYear": 1951,
       "pagesNumber": 545,
-      "image": "https://lorempixel.com/220/300/abstract?id=4e6402c1-c236-43a8-b6ae-c54cc52dcd83",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "04046987-b817-4278-8509-5ffcd41aa3a8"
     },
     {
@@ -481,7 +481,7 @@
       "isbn": "3O1GC1VMBNOV1R9DD2R30XK5AO9MEH",
       "publishYear": 1990,
       "pagesNumber": 854,
-      "image": "https://lorempixel.com/220/300/nature?id=a7569bf7-7973-4918-b7f0-ff3947855831",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "ddc81706-b0c9-4ec6-a3ce-78a2300d442d"
     },
     {
@@ -492,7 +492,7 @@
       "isbn": "12PLI7W0H3W005LPOLRBRNK5XCQZ31",
       "publishYear": 1980,
       "pagesNumber": 756,
-      "image": "https://lorempixel.com/220/300/nature?id=0375f1a8-82e6-4543-ad1b-0e7c22e2a6f9",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "93a51118-8d8e-410e-8afb-ba3bd1c5e910"
     },
     {
@@ -503,7 +503,7 @@
       "isbn": "1WZTOV5RUJVCA39JQ7YNQCF3YP3",
       "publishYear": 2009,
       "pagesNumber": 504,
-      "image": "https://lorempixel.com/220/300/abstract?id=409698e6-c3b3-4d18-94c7-600a69469f18",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "0d0158a0-c51f-4b00-af70-9bf449de2aee"
     },
     {
@@ -514,7 +514,7 @@
       "isbn": "1PWK3ZD9VHQ4NBUY2QQJ9SHQWFWX778Y53",
       "publishYear": 1990,
       "pagesNumber": 917,
-      "image": "https://lorempixel.com/220/300/nature?id=d99bdffe-268f-4442-b790-ba40f74919b4",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "dc1d741a-d4e9-4e64-b33a-4eeb0970903c"
     },
     {
@@ -525,7 +525,7 @@
       "isbn": "1JA1CPVMX15Y80W5AI2U7PI5JEJY",
       "publishYear": 1990,
       "pagesNumber": 441,
-      "image": "https://lorempixel.com/220/300/nature?id=6fb1d1a1-f48a-47ac-a9f6-ce5c1848e79b",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "d86b9b4f-165a-49e9-a7e6-86a2ad10ea00"
     },
     {
@@ -536,7 +536,7 @@
       "isbn": "3PV2V5ENQMBTBQFKTYH9YK3BP59CSD",
       "publishYear": 2002,
       "pagesNumber": 377,
-      "image": "https://lorempixel.com/220/300/nature?id=590f6ca4-d388-41a4-aa4a-f65296fc39fa",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "af38e08e-1e47-473b-aaa3-4e9b6bde6b72"
     },
     {
@@ -547,7 +547,7 @@
       "isbn": "3OMJAWLDKWYQH0RGR7834S4D2EQZCL",
       "publishYear": 1977,
       "pagesNumber": 757,
-      "image": "https://lorempixel.com/220/300/abstract?id=d910e01f-af19-4934-9c31-b9a102b08fc3",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "dc1d741a-d4e9-4e64-b33a-4eeb0970903c"
     },
     {
@@ -558,7 +558,7 @@
       "isbn": "3SJAQUIRLO49QVP6KW9S96M5FN5RGB",
       "publishYear": 2008,
       "pagesNumber": 968,
-      "image": "https://lorempixel.com/220/300/nature?id=168768c1-20ef-4d9d-ab52-03c9317c0dbc",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "d86b9b4f-165a-49e9-a7e6-86a2ad10ea00"
     },
     {
@@ -569,7 +569,7 @@
       "isbn": "3O98SEQ58LGYFSI63UCGDVH3CNCWBL",
       "publishYear": 1984,
       "pagesNumber": 911,
-      "image": "https://lorempixel.com/220/300/nature?id=0e51a809-dbff-4b62-8108-70986cd4c9f1",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "dc1d741a-d4e9-4e64-b33a-4eeb0970903c"
     },
     {
@@ -580,7 +580,7 @@
       "isbn": "1OTBJSRDN9Y7Q4SL8RB5MRFCUS4NPDQ5",
       "publishYear": 1960,
       "pagesNumber": 740,
-      "image": "https://lorempixel.com/220/300/abstract?id=3e847956-7232-4e91-81bd-8a24b1589338",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "d86b9b4f-165a-49e9-a7e6-86a2ad10ea00"
     },
     {
@@ -591,7 +591,7 @@
       "isbn": "16TG6V9214LVCSVTBLMEORYEYFD3X84SD",
       "publishYear": 1995,
       "pagesNumber": 700,
-      "image": "https://lorempixel.com/220/300/nature?id=59199344-2eaa-4faf-8dc7-56f19f8a93c9",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "9967c77a-1da5-4d69-b6a9-014ca20abd61"
     },
     {
@@ -602,7 +602,7 @@
       "isbn": "3D7E29YI8AUW97XBVVA85ISZ7J8R",
       "publishYear": 2015,
       "pagesNumber": 195,
-      "image": "https://lorempixel.com/220/300/nature?id=0b42cd47-d2d9-4328-8b68-486dcb2f7cb2",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "88b92bc4-a7a3-4749-9911-87c48b6bb74c"
     },
     {
@@ -613,7 +613,7 @@
       "isbn": "12REOZSTO0LXKD2503MTDH7A8PV2KFL3N",
       "publishYear": 1982,
       "pagesNumber": 728,
-      "image": "https://lorempixel.com/220/300/abstract?id=f9fa45f8-5976-4159-9978-b9696bad0a5f",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "9967c77a-1da5-4d69-b6a9-014ca20abd61"
     },
     {
@@ -624,7 +624,7 @@
       "isbn": "320FFE0OGAOK9EGYE0O9E4YUXZS09DUSDP",
       "publishYear": 2013,
       "pagesNumber": 298,
-      "image": "https://lorempixel.com/220/300/abstract?id=64d0b148-b5de-4507-ba9e-416b1804ba4d",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "af38e08e-1e47-473b-aaa3-4e9b6bde6b72"
     },
     {
@@ -635,7 +635,7 @@
       "isbn": "3MRCVTKB07836O4OUTNPBBKQVJ1VM0DY0S",
       "publishYear": 1978,
       "pagesNumber": 154,
-      "image": "https://lorempixel.com/220/300/abstract?id=80b5c597-d3e8-4ad5-b6ea-4ab116fe6e04",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "d86b9b4f-165a-49e9-a7e6-86a2ad10ea00"
     },
     {
@@ -646,7 +646,7 @@
       "isbn": "33PXMONCDXDYNAP72C93NFKAMWX",
       "publishYear": 1985,
       "pagesNumber": 726,
-      "image": "https://lorempixel.com/220/300/abstract?id=355d2421-e94e-43ae-89ad-beea8a254ec5",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "0d0158a0-c51f-4b00-af70-9bf449de2aee"
     },
     {
@@ -657,7 +657,7 @@
       "isbn": "190YR4MVZWFJ20MQSJG3G73ITO8AKR",
       "publishYear": 1975,
       "pagesNumber": 188,
-      "image": "https://lorempixel.com/220/300/abstract?id=eaf3b5ee-9f99-43e4-b876-1a9206f0b152",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "fa3fd7b5-3637-4fbc-91a7-cc81ba5e5a8f"
     },
     {
@@ -668,7 +668,7 @@
       "isbn": "1QWRT48DNDBFH78LWKEC82WKOBC",
       "publishYear": 2016,
       "pagesNumber": 676,
-      "image": "https://lorempixel.com/220/300/abstract?id=fc724c73-b415-4b09-b917-18b7b4239a5c",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "dc1d741a-d4e9-4e64-b33a-4eeb0970903c"
     },
     {
@@ -679,7 +679,7 @@
       "isbn": "1J9YV2TF3UJFOIU9RBXWC6ANL2TPWZ4",
       "publishYear": 1957,
       "pagesNumber": 679,
-      "image": "https://lorempixel.com/220/300/nature?id=20bb2676-1080-4c31-aa07-46a2804ae7ec",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "d86b9b4f-165a-49e9-a7e6-86a2ad10ea00"
     },
     {
@@ -690,7 +690,7 @@
       "isbn": "3SK6JF0M6WRDMNOHP3SGT7ZW7X7YI6",
       "publishYear": 1957,
       "pagesNumber": 236,
-      "image": "https://lorempixel.com/220/300/abstract?id=1fc39e3d-444a-42eb-ba3c-82cefebd5ce7",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "ddc81706-b0c9-4ec6-a3ce-78a2300d442d"
     },
     {
@@ -701,7 +701,7 @@
       "isbn": "3AHKMIX2XV789QB05EA82F93RJGF",
       "publishYear": 2009,
       "pagesNumber": 717,
-      "image": "https://lorempixel.com/220/300/abstract?id=d8e1aae1-0a44-4649-9527-165bb3b593a2",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "dc1d741a-d4e9-4e64-b33a-4eeb0970903c"
     },
     {
@@ -712,7 +712,7 @@
       "isbn": "3SM3VKJJ8SJD3Z5PXWQMGURB8G70",
       "publishYear": 1965,
       "pagesNumber": 434,
-      "image": "https://lorempixel.com/220/300/abstract?id=fa62b1bf-a4e3-4800-8f7e-8009fbf6d60e",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "88b92bc4-a7a3-4749-9911-87c48b6bb74c"
     },
     {
@@ -723,7 +723,7 @@
       "isbn": "1PJ86T4CYT77OEHKXM6KNVWF79O",
       "publishYear": 1982,
       "pagesNumber": 880,
-      "image": "https://lorempixel.com/220/300/nature?id=9f0661d4-99ad-42ab-8a5a-ca1d8fcc6892",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "4964327c-028a-469d-b432-d3b857a10f0d"
     },
     {
@@ -734,7 +734,7 @@
       "isbn": "1WATWV3AVKEKEIJ9ZBONMBXP2MZ4",
       "publishYear": 1974,
       "pagesNumber": 749,
-      "image": "https://lorempixel.com/220/300/nature?id=15b0bdf6-c446-4a77-a9d1-891f4202e9c7",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "fa3fd7b5-3637-4fbc-91a7-cc81ba5e5a8f"
     },
     {
@@ -745,7 +745,7 @@
       "isbn": "3G11D7QTUD6WNTZ661Q8C6NK734",
       "publishYear": 1956,
       "pagesNumber": 899,
-      "image": "https://lorempixel.com/220/300/abstract?id=da733cdf-08e9-481a-b660-f931c4ac4624",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "f6507468-6cec-4563-923f-b51702e049a1"
     },
     {
@@ -756,7 +756,7 @@
       "isbn": "3QNP2JMM62B61351BTLTU0R8FOXPPP",
       "publishYear": 1953,
       "pagesNumber": 452,
-      "image": "https://lorempixel.com/220/300/abstract?id=bffd4dd3-0d62-45b8-bb0f-292a07c6042e",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "8c08730b-c774-427b-9d96-4b31d9292c62"
     },
     {
@@ -767,7 +767,7 @@
       "isbn": "1WV22PMFHZV2OH481ZCH10M86YWXP5Y",
       "publishYear": 1988,
       "pagesNumber": 490,
-      "image": "https://lorempixel.com/220/300/abstract?id=b8843521-d412-4898-80a0-d1ae5ba3a61d",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "dc1d741a-d4e9-4e64-b33a-4eeb0970903c"
     },
     {
@@ -778,7 +778,7 @@
       "isbn": "3PJJD8PZZX2E99FMLD8RO7MLROLOCMW",
       "publishYear": 1980,
       "pagesNumber": 75,
-      "image": "https://lorempixel.com/220/300/nature?id=d0dabd69-e388-4879-86bd-08945280b467",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "93a51118-8d8e-410e-8afb-ba3bd1c5e910"
     },
     {
@@ -789,7 +789,7 @@
       "isbn": "3L68NHGPJWKOD4DS5V4CYTLRIE311",
       "publishYear": 1982,
       "pagesNumber": 994,
-      "image": "https://lorempixel.com/220/300/nature?id=bf97f1f4-fef3-47b2-a327-4e7248107657",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "04046987-b817-4278-8509-5ffcd41aa3a8"
     },
     {
@@ -800,7 +800,7 @@
       "isbn": "16NYXZMSTLS92RZUWXUWEQ32DZ1UHH4",
       "publishYear": 1978,
       "pagesNumber": 915,
-      "image": "https://lorempixel.com/220/300/abstract?id=819876cb-08c6-4e69-869c-9b93e0fdf146",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "4964327c-028a-469d-b432-d3b857a10f0d"
     },
     {
@@ -811,7 +811,7 @@
       "isbn": "348QR7HTE00CH2O1CFHQH1FGIRQQX4",
       "publishYear": 1976,
       "pagesNumber": 556,
-      "image": "https://lorempixel.com/220/300/abstract?id=fbcd5af8-6008-4105-9a98-6ba4a96f443f",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "f6507468-6cec-4563-923f-b51702e049a1"
     },
     {
@@ -822,7 +822,7 @@
       "isbn": "3MKYUQWM702L8ZYO5LMDSPGHIKVI",
       "publishYear": 2007,
       "pagesNumber": 511,
-      "image": "https://lorempixel.com/220/300/nature?id=b1d89c70-e898-443f-906b-2b61fcb03d55",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "8c08730b-c774-427b-9d96-4b31d9292c62"
     },
     {
@@ -833,7 +833,7 @@
       "isbn": "3II3CHLXUSR1FQBC9NQCX525BGFFEL",
       "publishYear": 1968,
       "pagesNumber": 389,
-      "image": "https://lorempixel.com/220/300/abstract?id=6a594d3e-03db-47cf-b9ed-67ee4bc96170",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "af38e08e-1e47-473b-aaa3-4e9b6bde6b72"
     },
     {
@@ -844,7 +844,7 @@
       "isbn": "11REO1MNWIFNDYKN58GBS7LEC15RENI8F",
       "publishYear": 1964,
       "pagesNumber": 241,
-      "image": "https://lorempixel.com/220/300/abstract?id=70719a02-a3aa-4032-9257-5acb61d69696",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "f6507468-6cec-4563-923f-b51702e049a1"
     },
     {
@@ -855,7 +855,7 @@
       "isbn": "3DQVF4C9NFPGDQI90BT0ALBZOY30",
       "publishYear": 1975,
       "pagesNumber": 388,
-      "image": "https://lorempixel.com/220/300/abstract?id=689b454a-1b4c-42d9-ab54-6b0cb62dcdc9",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "0d0158a0-c51f-4b00-af70-9bf449de2aee"
     },
     {
@@ -866,7 +866,7 @@
       "isbn": "38GBEGT9IBV5YRF4I7OMUEUFMF5OGR",
       "publishYear": 2012,
       "pagesNumber": 173,
-      "image": "https://lorempixel.com/220/300/nature?id=950a5401-20f0-4866-93cf-eb84f1e4ea9e",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "dc1d741a-d4e9-4e64-b33a-4eeb0970903c"
     },
     {
@@ -877,7 +877,7 @@
       "isbn": "3BWO764S5Z0OIF99PY0GGX9YQOEXOUB",
       "publishYear": 1994,
       "pagesNumber": 746,
-      "image": "https://lorempixel.com/220/300/nature?id=5674699a-ff6a-43b7-bcdb-d25f66941d07",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "d86b9b4f-165a-49e9-a7e6-86a2ad10ea00"
     },
     {
@@ -888,7 +888,7 @@
       "isbn": "1NUJT1JCLH6ZKJNR3RLL9KPMA9US338LB",
       "publishYear": 1969,
       "pagesNumber": 151,
-      "image": "https://lorempixel.com/220/300/nature?id=8648ef8c-e107-4b70-8774-f202b345c914",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "bca15b9c-3ef2-47a7-8f4d-0ae177c77ee6"
     },
     {
@@ -899,7 +899,7 @@
       "isbn": "3TVPRXESWHMOQZZG2RL3IG98369Q6F75",
       "publishYear": 1987,
       "pagesNumber": 347,
-      "image": "https://lorempixel.com/220/300/nature?id=31be0e90-7101-406b-8999-ad662bb1a7a3",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "4964327c-028a-469d-b432-d3b857a10f0d"
     },
     {
@@ -910,7 +910,7 @@
       "isbn": "1FQ7WYNX9OUQZJHYGRD5BUG01M8O3YSUL",
       "publishYear": 2003,
       "pagesNumber": 305,
-      "image": "https://lorempixel.com/220/300/nature?id=8afa88ea-79fb-4c0e-97e0-ff2ab62c203d",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "9967c77a-1da5-4d69-b6a9-014ca20abd61"
     },
     {
@@ -921,7 +921,7 @@
       "isbn": "11FA8ZTX9VAMRPU71J0EPUENNG1CJ",
       "publishYear": 2010,
       "pagesNumber": 382,
-      "image": "https://lorempixel.com/220/300/nature?id=1002aab3-c7f9-4246-865f-970b999473c2",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "93a51118-8d8e-410e-8afb-ba3bd1c5e910"
     },
     {
@@ -932,7 +932,7 @@
       "isbn": "18MDDP9PZJGOT76P68QLE3NZUT5N",
       "publishYear": 1966,
       "pagesNumber": 969,
-      "image": "https://lorempixel.com/220/300/abstract?id=aa8d2a61-f86b-4703-a550-3db32aad60d3",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "4964327c-028a-469d-b432-d3b857a10f0d"
     },
     {
@@ -943,7 +943,7 @@
       "isbn": "1A7BY2QN6K4A9SNROY7B64NGDXJBUQCQR5",
       "publishYear": 1981,
       "pagesNumber": 977,
-      "image": "https://lorempixel.com/220/300/nature?id=2923d50e-51cc-4fb7-86ae-e076787e3eb8",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "dc1d741a-d4e9-4e64-b33a-4eeb0970903c"
     },
     {
@@ -954,7 +954,7 @@
       "isbn": "3FT3C0WRA7UG6Q4D65V1NA9KSUZ2VZRSVF",
       "publishYear": 1993,
       "pagesNumber": 502,
-      "image": "https://lorempixel.com/220/300/nature?id=df9351fd-dd05-42bf-ac7d-aa255a2fecfb",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "93a51118-8d8e-410e-8afb-ba3bd1c5e910"
     },
     {
@@ -965,7 +965,7 @@
       "isbn": "17PF1HI5GFLG0HEA1OFT9OU2Z6T3D",
       "publishYear": 1981,
       "pagesNumber": 226,
-      "image": "https://lorempixel.com/220/300/abstract?id=8e5d5fef-7572-4578-82b2-f11de5babaf4",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "9967c77a-1da5-4d69-b6a9-014ca20abd61"
     },
     {
@@ -976,7 +976,7 @@
       "isbn": "330GNHEBJL8S4UFZ4QRATIXJWQZMV",
       "publishYear": 1992,
       "pagesNumber": 337,
-      "image": "https://lorempixel.com/220/300/nature?id=ea4840d1-1437-4abd-bb72-809ad92366e2",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "9967c77a-1da5-4d69-b6a9-014ca20abd61"
     },
     {
@@ -987,7 +987,7 @@
       "isbn": "338NHSSDRSURKTMVJK6KZRIA7U1HF5S9",
       "publishYear": 1983,
       "pagesNumber": 423,
-      "image": "https://lorempixel.com/220/300/nature?id=58fa0fa0-2ae1-44af-8543-e2d5a08f5fa6",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "fa3fd7b5-3637-4fbc-91a7-cc81ba5e5a8f"
     },
     {
@@ -998,7 +998,7 @@
       "isbn": "13CTLF77AXCN6509HL5D5J4TJO66FFS",
       "publishYear": 1950,
       "pagesNumber": 974,
-      "image": "https://lorempixel.com/220/300/abstract?id=a536e082-c2dd-48e5-a5f7-dafcb0c48f42",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "16877178-dc27-4fec-babc-8111142cbd2f"
     },
     {
@@ -1009,7 +1009,7 @@
       "isbn": "3GQSAFYODL5U6N89P0UAO14LH994O9H",
       "publishYear": 1966,
       "pagesNumber": 213,
-      "image": "https://lorempixel.com/220/300/nature?id=064fe734-12a1-4e1f-bb81-59712abaeb8e",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "ddc81706-b0c9-4ec6-a3ce-78a2300d442d"
     },
     {
@@ -1020,7 +1020,7 @@
       "isbn": "1H10WJPLYAN7Z25DNJ4ACHS4ITR40",
       "publishYear": 2010,
       "pagesNumber": 165,
-      "image": "https://lorempixel.com/220/300/abstract?id=0efda72a-beea-4c80-912b-f18f85439e5a",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "f6507468-6cec-4563-923f-b51702e049a1"
     },
     {
@@ -1031,7 +1031,7 @@
       "isbn": "3ENDQ0L56O9X1EGS4HODUD3CMUKH0D",
       "publishYear": 1980,
       "pagesNumber": 745,
-      "image": "https://lorempixel.com/220/300/abstract?id=072d560f-f298-452c-866c-9d6d86af9112",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "93a51118-8d8e-410e-8afb-ba3bd1c5e910"
     },
     {
@@ -1042,7 +1042,7 @@
       "isbn": "31WH1ZQAOJJC9NQ1TV8FYM01QDXIQ",
       "publishYear": 1958,
       "pagesNumber": 927,
-      "image": "https://lorempixel.com/220/300/nature?id=4362c036-5f75-4037-8067-3535c26efaf8",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "af38e08e-1e47-473b-aaa3-4e9b6bde6b72"
     },
     {
@@ -1053,7 +1053,7 @@
       "isbn": "34S6TAZ0EOZ5SSZKTLRQ9Y1PUKS",
       "publishYear": 1965,
       "pagesNumber": 133,
-      "image": "https://lorempixel.com/220/300/abstract?id=69d026ec-0886-4dcb-8c10-1c29534c2689",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "ddc81706-b0c9-4ec6-a3ce-78a2300d442d"
     },
     {
@@ -1064,7 +1064,7 @@
       "isbn": "13OWCUPMNMKXOCV2JT7TJNV368I5H2V",
       "publishYear": 2008,
       "pagesNumber": 207,
-      "image": "https://lorempixel.com/220/300/nature?id=49d3a86f-aed9-4b88-a2f3-a29e448a227b",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "93a51118-8d8e-410e-8afb-ba3bd1c5e910"
     },
     {
@@ -1075,7 +1075,7 @@
       "isbn": "3DYYTKEHHG86DTS3Y8M0LKEEQFBVM",
       "publishYear": 2002,
       "pagesNumber": 421,
-      "image": "https://lorempixel.com/220/300/nature?id=21d2df00-9bbc-4d46-8c29-eb23a4a8fcf3",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "bca15b9c-3ef2-47a7-8f4d-0ae177c77ee6"
     },
     {
@@ -1086,7 +1086,7 @@
       "isbn": "1YT1I2J5VBD37GKHAS486IN62U1AR663",
       "publishYear": 1970,
       "pagesNumber": 882,
-      "image": "https://lorempixel.com/220/300/nature?id=d9722588-835e-46bd-a67d-e426bd9dd267",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "4964327c-028a-469d-b432-d3b857a10f0d"
     },
     {
@@ -1097,7 +1097,7 @@
       "isbn": "1VBWM6NAGOKXKH5RW27TYQOXGGE",
       "publishYear": 1994,
       "pagesNumber": 982,
-      "image": "https://lorempixel.com/220/300/nature?id=c7ae9365-3f91-4dca-98d7-2fdfbaf3c169",
+	  "image": "https://picsum.photos/200/300/?image=100", 
       "category": "8c08730b-c774-427b-9d96-4b31d9292c62"
     },
     {
