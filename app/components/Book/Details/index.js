@@ -24,6 +24,20 @@ class BookDetails extends React.Component {
     };
   }
 
+  getBookDetails(id) {
+    requester(
+      {
+        url: fetchBookByIdAPI(id),
+        method: 'GET',
+      },
+      response => {
+        this.setState({
+          book: response.data.book,
+        });
+      },
+    );
+  }
+
   componentDidMount() {
     const { book } = this.state;
     const {
@@ -31,17 +45,23 @@ class BookDetails extends React.Component {
     } = this.props;
 
     if (!book) {
-      requester(
-        {
-          url: fetchBookByIdAPI(params.id),
-          method: 'GET',
-        },
-        response => {
-          this.setState({
-            book: response.data.book,
-          });
-        },
-      );
+      this.getBookDetails(params.id);
+    }
+  }
+
+  static getDerivedStateFromProps(nextProps, prevState) {
+    if (prevState.book && nextProps.id !== prevState.book.id) {
+      return { id: nextProps.id };
+    }
+
+    return null;
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const { id } = this.props; // new one
+
+    if (prevProps.id !== id) {
+      this.getBookDetails(id);
     }
   }
 

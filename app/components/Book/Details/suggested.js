@@ -35,7 +35,7 @@ export default class SuggestedBooks extends React.Component {
 
     const bookCards = books.map(book => {
       return (
-        <div className="column">
+        <div className="column" key={book.id}>
           <BookCard book={book} key={book.id} />
         </div>
       );
