@@ -1,4 +1,4 @@
-const booksBL = require('../businessLayer/books');
+const booksBL = require('../businessLayer/book');
 const url = require('url');
 
 exports.api = function(router) {

@@ -1,4 +1,4 @@
-const booksDL = require('../dataLayer/books');
+const booksDL = require('../dataLayer/book');
 
 exports.getBooks = function(pageNumber, pageSize) {
   return booksDL.getBooks(pageNumber, pageSize);

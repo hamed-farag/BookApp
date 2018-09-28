@@ -3,6 +3,8 @@ import { LOCATION_CHANGE } from 'react-router-redux';
 
 import global from './redux/reducer';
 import book from 'components/Book/redux/reducer';
+import author from 'components/Author/redux/reducer';
+import category from 'components/Category/redux/reducer';
 
 // Initial routing state
 const routeInitialState = {
@@ -23,4 +25,6 @@ export default combineReducers({
   route: routeReducer,
   global,
   book,
+  author,
+  category,
 });

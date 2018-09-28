@@ -1,18 +1,24 @@
-const low = require('lowdb');
-const FileSync = require('lowdb/adapters/FileSync');
-const _includes = require('lodash/includes');
+const baseDL = require('./base');
 
-const adapter = new FileSync('server/database/books.json');
-const db = low(adapter);
+const collectioName = 'authors';
+
+function getAuthors() {
+  return baseDL.get(collectioName).map(function(e) {
+    return { id: e.id, name: e.name };
+  });
+}
 
 function getAuthorByName(name) {
   console.log(name);
   //const l = _first(
-  const l = db.get('authors').find(function(author) {
-    console.log(author.name);
-    const founda = _includes(author.name, name);
-    return founda;
-  }).first();
+  const l = db
+    .get('authors')
+    .find(function(author) {
+      console.log(author.name);
+      const founda = _includes(author.name, name);
+      return founda;
+    })
+    .first();
 
   //);
 
@@ -20,3 +26,4 @@ function getAuthorByName(name) {
 }
 
 exports.getAuthorByName = getAuthorByName;
+exports.getAuthors = getAuthors;

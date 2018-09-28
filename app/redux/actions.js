@@ -1,6 +1,6 @@
 import consts from './consts';
 
-export function ChangeAppMode() {
+export function changeAppMode() {
   return {
     type: consts.CHANGE_APP_MODE,
   };

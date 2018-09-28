@@ -1,6 +1,3 @@
-// loading then list books
-// https://github.com/AdeleD/react-paginate#readme
-
 import React from 'react';
 import { connect } from 'react-redux';
 import Pagination from 'react-js-pagination';
