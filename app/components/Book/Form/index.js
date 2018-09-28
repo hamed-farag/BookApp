@@ -1,156 +1,137 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { Form, Text, Select, TextArea } from 'react-form';
+import { Form, Text, Select, Option, TextArea } from 'informed';
 
 import requester from '../../../utilities/api/requester';
 
 class BookForm extends React.Component {
-  state = {};
+  state = {
+    initialValues: {},
+  };
 
   componentDidMount() {
     debugger;
     // if props.id it mean in edit mode
     // call api to get this detailed document // or check store for it first
-    // get catefoty and bind it
-    // get author and bind it
   }
 
-  submitForm = (q, w, e, r, t, y) => {
-    debugger;
+  submitForm = values => {
+    console.info(values);
   };
-
-  statusOptions = [
-    {
-      label: 'Single',
-      value: 'single',
-    },
-    {
-      label: 'In a Relationship',
-      value: 'relationship',
-    },
-    {
-      label: "It's Complicated",
-      value: 'complicated',
-    },
-  ];
-  G;
 
   render() {
     const { authors, categories } = this.props;
 
-    const authorsList = authors.map(author => ({
-      label: author.name,
-      value: author.id,
-    }));
+    const categoriesList = categories.map(category => (
+      <Option value={category.id} key={category.id}>
+        {category.name}
+      </Option>
+    ));
 
-    const categoriesList = categories.map(category => ({
-      label: category.name,
-      value: category.id,
-    }));
+    const authorsList = authors.map(author => (
+      <Option value={author.id} key={author.id}>
+        {author.name}
+      </Option>
+    ));
 
     return (
       <React.Fragment>
         <h1 className="title">Book</h1>
         <h2 className="subtitle">Add your Favourite book</h2>
-        <Form onSubmit={submittedValues => this.setState({ submittedValues })}>
-          {formApi => (
-            <form onSubmit={formApi.submitForm}>
-              <div className="columns">
-                <div className="column">
-                  <div className="field ">
-                    <Text
-                      placeholder="Title"
-                      className="input is-primary"
-                      field="firstName"
-                      id="firstName"
-                    />
-                  </div>
+        <Form
+          onSubmit={submittedValues => {
+            this.submitForm(submittedValues);
+          }}
+        >
+          <div className="columns">
+            <div className="column">
+              <div className="field ">
+                <Text
+                  required
+                  placeholder="Book Title"
+                  className="input is-primary"
+                  field="title"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="columns">
+            <div className="column">
+              <div className="field is-horizontal">
+                <div className="select is-primary ">
+                  <Select field="category">{categoriesList}</Select>
                 </div>
               </div>
-              <div className="columns">
-                <div className="column">
-                  <div className="field is-horizontal">
-                    <div className="select is-primary ">
-                      <Select
-                        field="status"
-                        id="status"
-                        options={authorsList}
-                        className="mb-4"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="column">
-                  <div className="field is-horizontal">
-                    <div className="select is-primary ">
-                      <Select
-                        field="status"
-                        id="status"
-                        options={categoriesList}
-                        className="mb-4"
-                      />
-                    </div>
-                  </div>
+            </div>
+            <div className="column">
+              <div className="field is-horizontal">
+                <div className="select is-primary ">
+                  <Select field="author">{authorsList}</Select>
                 </div>
               </div>
-              <div className="columns">
-                <div className="column">
-                  <div className="field is-horizontal">
-                    <TextArea field="bio" className="textarea is-primary" />
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div className="columns">
+            <div className="column">
+              <div className="field is-horizontal">
+                <TextArea
+                  required
+                  field="description"
+                  placeholder="Book Description"
+                  className="textarea is-primary"
+                />
               </div>
-              <div className="columns">
-                <div className="column">
-                  <div className="field is-horizontal">
-                    <Text
-                      placeholder="Title"
-                      className="input is-primary"
-                      field="firstName"
-                      id="firstName"
-                    />
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div className="columns">
+            <div className="column">
+              <div className="field is-horizontal">
+                <Text
+                  required
+                  placeholder="ISBN"
+                  className="input is-primary"
+                  field="isbn"
+                />
               </div>
-              <div className="columns">
-                <div className="column">
-                  <div className="field is-horizontal">
-                    <Text
-                      placeholder="Title"
-                      className="input is-primary"
-                      field="firstName"
-                      id="firstName"
-                    />
-                  </div>
-                </div>
-                <div className="column">
-                  <div className="field is-horizontal">
-                    <Text
-                      placeholder="Title"
-                      className="input is-primary"
-                      field="firstName"
-                      id="firstName"
-                    />
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div className="columns">
+            <div className="column">
+              <div className="field is-horizontal">
+                <Text
+                  required
+                  placeholder="No. of pages"
+                  className="input is-primary"
+                  field="pagesNumber"
+                />
               </div>
-              <div className="columns">
-                <div className="column">
-                  <div className="field is-horizontal">
-                    <Text
-                      placeholder="Title"
-                      className="input is-primary"
-                      field="firstName"
-                      id="firstName"
-                    />
-                  </div>
-                </div>
+            </div>
+            <div className="column">
+              <div className="field is-horizontal">
+                <Text
+                  required
+                  placeholder="Year Published"
+                  className="input is-primary"
+                  field="publishYear"
+                />
               </div>
-              <input className="button is-primary" type="submit" value="Save" />
-              <input className="button" type="reset" value="Cancel" />
-            </form>
-          )}
+            </div>
+          </div>
+          <div className="columns">
+            <div className="column">
+              <div className="field is-horizontal">
+                <Text
+                  required
+                  placeholder="Image URL"
+                  className="input is-primary"
+                  field="image"
+                />
+              </div>
+            </div>
+          </div>
+          <input className="button is-primary" type="submit" value="Save" />
+          <input className="button" type="reset" value="Cancel" />
         </Form>
       </React.Fragment>
     );
