@@ -17,3 +17,7 @@ exports.searchForBook = function(query) {
   }
   return null;
 };
+
+exports.addBook = function(book) {
+  booksDL.addBook(book);
+};

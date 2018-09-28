@@ -24,4 +24,13 @@ exports.api = function(router) {
     const books = booksBL.searchForBook(query);
     res.json({ books: books });
   });
+
+  router.post('/books', function(req, res) {
+    try {
+      booksBL.addBook(req.body);
+      res.sendStatus(200);
+    } catch (error) {
+      res.send(error);
+    }
+  });
 };
