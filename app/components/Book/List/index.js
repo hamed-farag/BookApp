@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import Pagination from 'react-js-pagination';
 
 import { fetchBooks } from '../redux/actions';
@@ -66,7 +67,9 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(
-  mapStoreToProps,
-  mapDispatchToProps,
-)(BookList);
+export default withRouter(
+  connect(
+    mapStoreToProps,
+    mapDispatchToProps,
+  )(BookList),
+);

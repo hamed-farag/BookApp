@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import { Form, Text, Select, TextArea } from 'react-form';
 
 import requester from '../../../utilities/api/requester';
@@ -50,8 +51,8 @@ class BookForm extends React.Component {
 
     return (
       <React.Fragment>
-        <h1 class="title">Book</h1>
-        <h2 class="subtitle">Add your Favourite book</h2>
+        <h1 className="title">Book</h1>
+        <h2 className="subtitle">Add your Favourite book</h2>
         <Form onSubmit={submittedValues => this.setState({ submittedValues })}>
           {formApi => (
             <form onSubmit={formApi.submitForm}>
@@ -167,7 +168,9 @@ function mapDispatchToProps(dispatch) {
   return {};
 }
 
-export default connect(
-  mapStoreToProps,
-  mapDispatchToProps,
-)(BookForm);
+export default withRouter(
+  connect(
+    mapStoreToProps,
+    mapDispatchToProps,
+  )(BookForm),
+);

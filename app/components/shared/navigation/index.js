@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export default class Navigation extends React.Component {
@@ -35,9 +36,10 @@ export default class Navigation extends React.Component {
         </div>
         <div className="dropdown-menu" id="dropdown-menu6" role="menu">
           <div className="dropdown-content">
-            <div className="dropdown-item">
+            <Link to="/book/new" className="dropdown-item">
               <p>Add New Book</p>
-            </div>
+            </Link>
+
             <div className="dropdown-item">
               <p>Add New Category</p>
             </div>
@@ -63,12 +65,20 @@ export default class Navigation extends React.Component {
       margin-bottom: 20px;
     `;
 
+    const Title = styled.h1`
+      color: #fff;
+    `;
+
     return (
       <NavigationWrapper>
         <nav className="level">
           <div className="level-left">
             <div className="level-item">
-              <h1 className="title">Books Store</h1>
+              <Link to="/">
+                <Title className="title">
+                  <i className="fa fa-book" /> Books Store
+                </Title>
+              </Link>
             </div>
           </div>
           <div className="level-right">

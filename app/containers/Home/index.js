@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { withRouter, Switch, Route } from 'react-router-dom';
 
 import { changeAppMode } from '../../redux/actions';
 import { fetchAuthors } from 'components/Author/redux/actions';
@@ -47,57 +47,42 @@ class Home extends React.Component {
           }}
         />
         <div className="container">
-          <Router>
-            <Switch>
-              <Route
-                path="/"
-                component={match => {
-                  return (
-                    <div className="columns">
-                      <div className="column is-one-third">
-                        <LinksList title="Categories" items={categoriesList} />
-                        <LinksList title="Authors" items={authorsList} />
-                      </div>
-                      <div className="column">
-                        <Route exact path="/" component={Book} />
+          <div className="columns">
+            <div className="column is-one-third">
+              <LinksList title="Categories" items={categoriesList} />
+              <LinksList title="Authors" items={authorsList} />
+            </div>
 
-                        <Route path={`/book/:mode(new)`} component={Book} />
-                        <Route
-                          path={`/book/:id([0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})/:mode(edit)?`}
-                          component={Book}
-                        />
+            <div className="column">
+              <Switch>
+                <Route exact path="/" component={Book} />
+                <Route path={`/book/:mode(new)`} component={Book} />
+                <Route
+                  path={`/book/:id([0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})/:mode(edit)?`}
+                  component={Book}
+                />
 
-                        <Route path={`/author/:mode(new)`} component={Author} />
-                        <Route
-                          path={`/author/:id/:mode(edit)?`}
-                          component={Author}
-                        />
-                        <Route
-                          path={`/category/:mode(new)`}
-                          component={Category}
-                        />
-                        <Route
-                          path={`/category/:id/:mode(edit)?`}
-                          component={Category}
-                        />
-                      </div>
-                    </div>
-                  );
-                }}
-              />
-              <Route
-                component={match => {
-                  return (
+                <Route path={`/author/:mode(new)`} component={Author} />
+                <Route path={`/author/:id/:mode(edit)?`} component={Author} />
+                <Route path={`/category/:mode(new)`} component={Category} />
+                <Route
+                  path={`/category/:id/:mode(edit)?`}
+                  component={Category}
+                />
+
+                <Route
+                  component={match => (
                     <div className="columns">
                       <div className="column">
                         <NotFoundPage />
                       </div>
                     </div>
-                  );
-                }}
-              />
-            </Switch>
-          </Router>
+                  )}
+                />
+              </Switch>
+            </div>
+          </div>
+
           <footer className="footer">
             <div className="content has-text-centered">
               <p>
@@ -141,7 +126,9 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(
-  mapStoreToProps,
-  mapDispatchToProps,
-)(Home);
+export default withRouter(
+  connect(
+    mapStoreToProps,
+    mapDispatchToProps,
+  )(Home),
+);
