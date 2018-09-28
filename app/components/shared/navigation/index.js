@@ -69,6 +69,10 @@ export default class Navigation extends React.Component {
       color: #fff;
     `;
 
+    const editLabel = isAppInEditMode ? (
+      <span class="tag is-danger is-medium">Edit Mode</span>
+    ) : null;
+
     return (
       <NavigationWrapper>
         <nav className="level">
@@ -80,6 +84,7 @@ export default class Navigation extends React.Component {
                 </Title>
               </Link>
             </div>
+            {editLabel}
           </div>
           <div className="level-right">
             <div className="columns is-mobile">
