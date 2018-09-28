@@ -8,5 +8,9 @@ function getCategories() {
   });
 }
 
+function getCategoryById(id) {
+  return baseDL.get(collectioName).find({ id: id }).value();
+}
 
 exports.getCategories = getCategories;
+exports.getCategoryById = getCategoryById;

@@ -8,6 +8,10 @@ function getAuthors() {
   });
 }
 
+function getAuthorById(id) {
+  return baseDL.get(collectioName).find({ id: id }).value();
+}
+
 function getAuthorByName(name) {
   console.log(name);
   //const l = _first(
@@ -27,3 +31,4 @@ function getAuthorByName(name) {
 
 exports.getAuthorByName = getAuthorByName;
 exports.getAuthors = getAuthors;
+exports.getAuthorById = getAuthorById;

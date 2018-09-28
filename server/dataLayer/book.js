@@ -1,25 +1,50 @@
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
 const _includes = require('lodash/includes');
-const _size = require('lodash/size');
 
 const adapter = new FileSync('server/database/books.json');
 const db = low(adapter);
 
 const authorDL = require('./author');
+const categoryDL = require('./category');
 
 const collectionName = 'books';
 
 function getBooks(pageNumber, pageSize) {
-  var books = db.get(collectionName);
+  const books = db.get(collectionName);
+  const filterdBooks = books.slice(
+    pageNumber * pageSize,
+    (pageNumber + 1) * pageSize,
+  );
+
+  const fullInfoBooks = filterdBooks.map(function(book) {
+    const category = categoryDL.getCategoryById(book.category);
+    const author = authorDL.getAuthorById(book.author);
+
+    book.authorName = author.name;
+    book.categoryName = category.name;
+
+    return book;
+  });
+
   return {
-    totalCount: 100,
-    books: books.slice(pageNumber * pageSize, (pageNumber + 1) * pageSize),
+    totalCount: books.size().value(),
+    books: fullInfoBooks,
   };
 }
 
 function getBookById(id) {
-  return db.get(collectionName).find({ id: id });
+  const book = db
+    .get(collectionName)
+    .find({ id: id })
+    .value();
+  const category = categoryDL.getCategoryById(book.category);
+  const author = authorDL.getAuthorById(book.author);
+
+  book.authorName = author.name;
+  book.categoryName = category.name;
+
+  return book;
 }
 
 function searchForBook(query) {
