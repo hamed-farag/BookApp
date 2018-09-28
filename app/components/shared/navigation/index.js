@@ -70,7 +70,7 @@ export default class Navigation extends React.Component {
     `;
 
     const editLabel = isAppInEditMode ? (
-      <span class="tag is-danger is-medium">Edit Mode</span>
+      <span className="tag is-danger is-medium">Edit Mode</span>
     ) : null;
 
     return (

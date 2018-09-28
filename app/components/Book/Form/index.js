@@ -31,6 +31,10 @@ class BookForm extends React.Component {
     // this.props.books
   }
 
+  saveApi = formApi => {
+    this.formApi = formApi;
+  };
+
   submitForm = values => {
     requester(
       {
@@ -46,6 +50,20 @@ class BookForm extends React.Component {
       },
     );
   };
+
+  static getDerivedStateFromProps(nextProps, prevState) {
+    if (nextProps.id !== prevState.book.id) {
+      return { id: nextProps.id };
+    }
+    return null;
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevProps.id !== this.props.id) {
+      // this.formApi.reset();
+      this.formApi.setState({ values: {} });
+    }
+  }
 
   render() {
     const { authors, categories } = this.props;
@@ -81,6 +99,7 @@ class BookForm extends React.Component {
         <h2 className="subtitle">Add your Favourite book</h2>
         <hr />
         <Form
+          getApi={this.saveApi}
           onSubmit={submittedValues => {
             this.submitForm(submittedValues);
           }}
