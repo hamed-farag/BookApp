@@ -11,13 +11,24 @@ import requester from '../../../utilities/api/requester';
 import { create as createGuid } from '../../../utilities/guid';
 
 class BookForm extends React.Component {
-  state = {
-    initialValues: {},
-  };
+  constructor(props) {
+    super(props);
+
+    const {
+      books,
+      match: { params },
+    } = props;
+    const book = books.find(book => book.id === params.id) || {};
+
+    this.state = {
+      book,
+    };
+  }
 
   componentDidMount() {
     // if props.id it mean in edit mode
     // call api to get this detailed document // or check store for it first
+    // this.props.books
   }
 
   submitForm = values => {
@@ -38,6 +49,7 @@ class BookForm extends React.Component {
 
   render() {
     const { authors, categories } = this.props;
+    const { book } = this.state;
 
     const categoriesList = categories.map(category => (
       <Option value={category.id} key={category.id}>
@@ -87,6 +99,7 @@ class BookForm extends React.Component {
                         placeholder="Book Title"
                         className="input is-primary"
                         field="title"
+                        initialValue={book.title}
                       />
                     </p>
                   </div>
@@ -103,7 +116,11 @@ class BookForm extends React.Component {
                 <FieldBody>
                   <div className="field">
                     <SelectField className="select is-primary">
-                      <Select required field="category">
+                      <Select
+                        required
+                        field="category"
+                        initialValue={book.category}
+                      >
                         {categoriesList}
                       </Select>
                     </SelectField>
@@ -119,7 +136,11 @@ class BookForm extends React.Component {
                 <FieldBody className="field-body">
                   <div className="field">
                     <SelectField className="select is-primary">
-                      <Select required field="author">
+                      <Select
+                        required
+                        field="author"
+                        initialValue={book.author}
+                      >
                         {authorsList}
                       </Select>
                     </SelectField>
@@ -142,6 +163,7 @@ class BookForm extends React.Component {
                         field="description"
                         placeholder="Book Description"
                         className="textarea is-primary"
+                        initialValue={book.description}
                       />
                     </p>
                   </div>
@@ -163,6 +185,7 @@ class BookForm extends React.Component {
                         placeholder="ISBN"
                         className="input is-primary"
                         field="isbn"
+                        initialValue={book.isbn}
                       />
                     </p>
                   </div>
@@ -184,6 +207,7 @@ class BookForm extends React.Component {
                         placeholder="No. of pages"
                         className="input is-primary"
                         field="pagesNumber"
+                        initialValue={book.pagesNumber}
                       />
                     </p>
                   </div>
@@ -203,6 +227,7 @@ class BookForm extends React.Component {
                         placeholder="Year Published"
                         className="input is-primary"
                         field="publishYear"
+                        initialValue={book.publishYear}
                       />
                     </p>
                   </div>
@@ -224,6 +249,7 @@ class BookForm extends React.Component {
                         placeholder="Image URL"
                         className="input is-primary"
                         field="image"
+                        initialValue={book.image}
                       />
                     </p>
                   </div>
@@ -258,6 +284,7 @@ function mapStoreToProps(store) {
   return {
     authors: store.author.items,
     categories: store.category.items,
+    books: store.book.items,
   };
 }
 
