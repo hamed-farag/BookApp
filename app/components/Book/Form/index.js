@@ -5,7 +5,7 @@ import { withRouter } from 'react-router-dom';
 import { Form, Text, Select, Option, TextArea } from 'informed';
 import { Field, FieldLabel, FieldBody, SelectField } from './styles';
 
-import { addBookAPI } from '../apis';
+import { addBookAPI, fetchBookByIdAPI } from '../apis';
 
 import requester from '../../../utilities/api/requester';
 import { create as createGuid } from '../../../utilities/guid';
@@ -25,10 +25,28 @@ class BookForm extends React.Component {
     };
   }
 
+  // This Form working with new and edit mode
+  // at constructor, we check first if we have a book at store or not to load it directly without calling api
+  // if not, component did mount we call api to get this book and load it normaly
   componentDidMount() {
-    // if props.id it mean in edit mode
-    // call api to get this detailed document // or check store for it first
-    // this.props.books
+    const { book } = this.state;
+    const {
+      books,
+      match: { params },
+    } = this.props;
+
+    // dirty check, check if we have book object or not
+    if (params.id && book.id === undefined) {
+      requester(
+        {
+          method: 'get',
+          url: fetchBookByIdAPI(params.id),
+        },
+        response => {
+          this.formApi.setState({ values: response.data.book });
+        },
+      );
+    }
   }
 
   saveApi = formApi => {
@@ -51,6 +69,10 @@ class BookForm extends React.Component {
     );
   };
 
+  // scenario,
+  // use navigate to a book to edit it (Form in edit mode)
+  // he took a desision to click on 'Add New Book'
+  // these two directly below function to reset the form with out performance issue
   static getDerivedStateFromProps(nextProps, prevState) {
     if (nextProps.id !== prevState.book.id) {
       return { id: nextProps.id };
