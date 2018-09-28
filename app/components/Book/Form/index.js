@@ -31,7 +31,6 @@ class BookForm extends React.Component {
   componentDidMount() {
     const { book } = this.state;
     const {
-      books,
       match: { params },
     } = this.props;
 
@@ -54,13 +53,19 @@ class BookForm extends React.Component {
   };
 
   submitForm = values => {
+    const {
+      match: { params },
+    } = this.props;
+
     requester(
       {
         method: 'post',
         url: addBookAPI,
         data: {
           ...values,
-          id: createGuid(),
+          // params.id -> edit mode , else create new one,
+          // API will handle if it edit or add operation
+          id: params.id || createGuid(),
         },
       },
       response => {

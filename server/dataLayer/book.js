@@ -38,13 +38,16 @@ function getBookById(id) {
     .get(collectionName)
     .find({ id: id })
     .value();
-  const category = categoryDL.getCategoryById(book.category);
-  const author = authorDL.getAuthorById(book.author);
+  if (book) {
+    const category = categoryDL.getCategoryById(book.category);
+    const author = authorDL.getAuthorById(book.author);
 
-  book.authorName = author.name;
-  book.categoryName = category.name;
+    book.authorName = author.name;
+    book.categoryName = category.name;
 
-  return book;
+    return book;
+  }
+  return null;
 }
 
 function searchForBook(query) {
@@ -63,9 +66,20 @@ function searchForBook(query) {
 }
 
 function addBook(book) {
-  db.get(collectionName)
-    .push(book)
-    .write();
+  // Check first if book is exist or not
+  // if exist update it, else add it
+
+  const bookObj = getBookById(book.id);
+  if (bookObj) {
+    db.get(collectionName)
+      .find({ id: bookObj.id })
+      .assign(book)
+      .write();
+  } else {
+    db.get(collectionName)
+      .push(book)
+      .write();
+  }
 }
 
 exports.getBooks = getBooks;
