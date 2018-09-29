@@ -88,13 +88,6 @@ export default class Navigation extends React.Component {
           </div>
           <div className="level-right">
             <div className="columns is-mobile">
-              <div className="column">
-                <input
-                  className="input is-rounded"
-                  type="text"
-                  placeholder="Rounded input"
-                />
-              </div>
               <div className="column">{this.popupMenu()}</div>
             </div>
           </div>
