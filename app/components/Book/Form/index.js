@@ -10,6 +10,8 @@ import { addBookAPI, fetchBookByIdAPI } from '../apis';
 import requester from '../../../utilities/api/requester';
 import { create as createGuid } from '../../../utilities/guid';
 
+import { changeNotificationVisibility } from 'components/shared/Notification/redux/actions';
+
 class BookForm extends React.Component {
   constructor(props) {
     super(props);
@@ -57,19 +59,32 @@ class BookForm extends React.Component {
       match: { params },
     } = this.props;
 
+    // params.id -> edit mode , else create new one,
+    // API will handle if it edit or add operation
+    const bookId = params.id || createGuid();
+
     requester(
       {
         method: 'post',
         url: addBookAPI,
         data: {
           ...values,
-          // params.id -> edit mode , else create new one,
-          // API will handle if it edit or add operation
-          id: params.id || createGuid(),
+          id: bookId,
         },
       },
       response => {
         // Move to details page
+        this.props.history.push(`/book/${bookId}`);
+        this.props.changeNotificationVisibility({
+          message: `Hooooraaay, ${values.title} added successfully`, // TODO: check if edit or add mode
+          type: 'info',
+        });
+      },
+      error => {
+        this.props.changeNotificationVisibility({
+          message: `Someting went wrong, please try again later`,
+          type: 'danger',
+        });
       },
     );
   };
@@ -335,7 +350,11 @@ function mapStoreToProps(store) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return {};
+  return {
+    changeNotificationVisibility: config => {
+      dispatch(changeNotificationVisibility(config));
+    },
+  };
 }
 
 export default withRouter(

@@ -6,6 +6,8 @@ import book from 'components/Book/redux/reducer';
 import author from 'components/Author/redux/reducer';
 import category from 'components/Category/redux/reducer';
 
+import notification from 'components/shared/Notification/redux/reducer';
+
 // Initial routing state
 const routeInitialState = {
   location: null,
@@ -27,4 +29,5 @@ export default combineReducers({
   book,
   author,
   category,
+  notification,
 });

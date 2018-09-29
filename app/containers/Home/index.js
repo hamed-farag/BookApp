@@ -15,6 +15,8 @@ import NotFoundPage from 'containers/NotFoundPage';
 import Navigation from 'components/shared/navigation';
 import LinksList from 'components/shared/linksList';
 
+import Notification from 'components/shared/Notification';
+
 class Home extends React.Component {
   componentDidMount() {
     const { fetchCategories, fetchAuthors } = this.props;
@@ -50,6 +52,7 @@ class Home extends React.Component {
             isAppInEditMode: isAppInEditMode,
           }}
         />
+        <Notification />
         <div className="container">
           <div className="columns">
             <div className="column is-one-third">
