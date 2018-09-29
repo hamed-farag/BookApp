@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter, Switch, Route } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import { changeAppMode } from '../../redux/actions';
 import { fetchAuthors } from 'components/Author/redux/actions';
@@ -40,6 +41,9 @@ class Home extends React.Component {
 
     return (
       <div className="container is-fluid">
+        <Helmet>
+          <title>Book App - List</title>
+        </Helmet>
         <Navigation
           mode={{
             changeAppMode: changeAppMode,

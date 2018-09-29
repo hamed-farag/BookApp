@@ -1,11 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import { fetchBookByIdAPI } from '../apis';
 
 import requester from '../../../utilities/api/requester';
 
+import StateManager from 'components/shared/stateManager';
 import BlurbBookDetails from 'components/shared/blurbBookDetails';
 import SuggestedBooks from './suggested';
 
@@ -21,6 +23,8 @@ class BookDetails extends React.Component {
 
     this.state = {
       book,
+      isLoading: book ? false : true, // intialize isLoading with true if book object not found at the store
+      hasError: null,
     };
   }
 
@@ -33,6 +37,13 @@ class BookDetails extends React.Component {
       response => {
         this.setState({
           book: response.data.book,
+          isLoading: false,
+        });
+      },
+      error => {
+        this.setState({
+          hasError: error,
+          isLoading: false,
         });
       },
     );
@@ -67,17 +78,20 @@ class BookDetails extends React.Component {
 
   render() {
     const { isAppInEditMode } = this.props;
-    const { book } = this.state;
+    const { book, isLoading, hasError } = this.state;
 
     return (
-      <React.Fragment>
+      <StateManager isLoading={isLoading} hasError={hasError}>
+        <Helmet>
+          <title>{`Book App - ${book && book.title}`}</title>
+        </Helmet>
         <BlurbBookDetails book={book} isEditable={isAppInEditMode} />
         <br />
         <p>{book && book.description}</p>
         <hr />
         <h1 className="title">Suggested Books</h1>
         <SuggestedBooks />
-      </React.Fragment>
+      </StateManager>
     );
   }
 
@@ -93,4 +107,5 @@ function mapStoreToProps(store) {
   };
 }
 
+// Logging HOC
 export default withRouter(connect(mapStoreToProps)(BookDetails));
