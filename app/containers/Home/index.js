@@ -97,10 +97,9 @@ class Home extends React.Component {
           <footer className="footer">
             <div className="content has-text-centered">
               <p>
-                <b>Book App by Hamed Farag, All right reserved to Wuzzuf.</b>
-                <br/>
-                Front-End Stack Developed Using React, Redux, styled-components and Bulma UI Framework.
-                <br/>
+                Front-End Stack Developed Using React, Redux, styled-components
+                and Bulma UI Framework.
+                <br />
                 Back-End Developed Using Node.js and LowDB.
               </p>
             </div>
