@@ -63,7 +63,11 @@ class Home extends React.Component {
                 />
 
                 <Route path={`/author/:mode(new)`} component={Author} />
-                <Route path={`/author/:id/:mode(edit)?`} component={Author} />
+                <Route
+                  path={`/author/:id([0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})/:mode(edit)?`}
+                  component={Author}
+                />
+
                 <Route path={`/category/:mode(new)`} component={Category} />
                 <Route
                   path={`/category/:id/:mode(edit)?`}
