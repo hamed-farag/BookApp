@@ -2,6 +2,10 @@
   "name": "books-app",
   "version": "1.0.0",
   "description": "Book listing and management app",
+  "engines": {
+    "npm": "5.6.0",
+    "node": "8.11.4"
+  },
   "author": "Hamed Farag",
   "license": "MIT",
   "scripts": {
