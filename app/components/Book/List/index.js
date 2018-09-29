@@ -1,11 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import Pagination from 'react-js-pagination';
+
+import BooksList from 'components/shared/booksList';
 
 import { fetchBooks } from '../redux/actions';
-
-import BlurbBook from 'components/shared/blurbBook';
 
 class BookList extends React.Component {
   state = {
@@ -30,18 +29,18 @@ class BookList extends React.Component {
     const { activePage, top } = this.state;
 
     return (
-      <React.Fragment>
-        {books.map(book => (
-          <BlurbBook book={book} isEditable={isAppInEditMode} key={book.id} />
-        ))}
-        <Pagination
-          activePage={activePage}
-          itemsCountPerPage={top}
-          totalItemsCount={totalCount}
-          pageRangeDisplayed={5}
-          onChange={this.handlePageChange}
-        />
-      </React.Fragment>
+      <BooksList
+        books={books}
+        config={{
+          totalCount,
+          isAppInEditMode,
+          activePage,
+          top,
+          pageRangeDisplayed: 5,
+        }}
+        isAppInEditMode={isAppInEditMode}
+        handlePageChange={this.handlePageChange}
+      />
     );
   }
 
