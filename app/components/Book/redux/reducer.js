@@ -4,6 +4,7 @@ const intitialState = {
   items: [],
   totalCount: 0,
   hasError: null,
+  isLoading: true,
 };
 
 export default function(state = intitialState, action) {
@@ -14,9 +15,10 @@ export default function(state = intitialState, action) {
         ...state,
         items: [...result.books],
         totalCount: result.totalCount,
+        isLoading: false,
       };
     case consts.FETCH_BOOKS.FAILURE:
-      return { ...state, hasError: true };
+      return { ...state, hasError: true, isLoading: false };
 
     default:
       return state;

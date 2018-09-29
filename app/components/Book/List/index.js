@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
 import BooksList from 'components/shared/booksList';
+import StateManager from 'components/shared/stateManager';
 
 import { fetchBooks } from '../redux/actions';
 
@@ -25,22 +26,30 @@ class BookList extends React.Component {
   };
 
   render() {
-    const { books, totalCount, isAppInEditMode } = this.props;
+    const {
+      books,
+      totalCount,
+      isAppInEditMode,
+      isLoading,
+      hasError,
+    } = this.props;
     const { activePage, top } = this.state;
 
     return (
-      <BooksList
-        books={books}
-        config={{
-          totalCount,
-          isAppInEditMode,
-          activePage,
-          top,
-          pageRangeDisplayed: 5,
-        }}
-        isAppInEditMode={isAppInEditMode}
-        handlePageChange={this.handlePageChange}
-      />
+      <StateManager isLoading={isLoading} hasError={hasError}>
+        <BooksList
+          books={books}
+          config={{
+            totalCount,
+            isAppInEditMode,
+            activePage,
+            top,
+            pageRangeDisplayed: 5,
+          }}
+          isAppInEditMode={isAppInEditMode}
+          handlePageChange={this.handlePageChange}
+        />
+      </StateManager>
     );
   }
 
@@ -53,6 +62,7 @@ function mapStoreToProps(store) {
   return {
     books: store.book.items,
     hasError: store.book.hasError,
+    isLoading: store.book.isLoading,
     totalCount: store.book.totalCount,
     isAppInEditMode: store.global.isAppInEditMode,
   };

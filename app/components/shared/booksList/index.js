@@ -6,7 +6,7 @@ import BlurbBook from 'components/shared/blurbBook';
 export default props => {
   const { books, handlePageChange, isAppInEditMode, config } = props;
   const { activePage, top, totalCount, pageRangeDisplayed } = config;
-  debugger;
+
   return (
     <React.Fragment>
       {books.map(book => (
